@@ -58,5 +58,12 @@ def sum_array(array)
   integers.inject{|sum, number| sum + number}
 end
 
-p sum_array(["ant", 12, "fruit", 6, "alien", -3.5, "arctic"])
+def add_s(strings)
+  strings.each_with_index.collect do |word, index|
+    if index != 1 
+      word = word + "s"
+    end
+  end 
+end 
+p add_s(["ant", "mice", "fruit", "alien", "arctic"])
   
