@@ -49,7 +49,13 @@ def find_a(strings)
 end
 
 def sum_array(array)
-  
+  integers = []
+  array.each do |element|
+    if element.class == Integer || element.class == Float
+      integers << element
+    end
+  end
+  integers.inject{|sum, number| sum + number}
 
 p find_a(["ant", "bathtub", "fruit", "alien", "arctic"])
   
