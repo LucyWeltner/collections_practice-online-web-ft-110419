@@ -26,4 +26,4 @@ def swap_elements_from_to(array, starting, ending)
   switched_array
 end
 array = [1, 4, 8, 2, -6, 11]
-p swap_elements_from_to(array, 1, 4)
+p swap_elements_from_to(array, 0, 4)
