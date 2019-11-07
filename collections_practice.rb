@@ -29,4 +29,24 @@ def swap_elements_from_to(array, starting, ending)
   switched_array
 end
 array = [1, 4, 8, 2, -6, 11]
-p swap_elements_from_to(array, 3, 5)
+swap_elements_from_to(array, 3, 5)
+
+def reverse_array(array)
+  array.reverse 
+end 
+
+def kesha_maker(strings)
+  kesha_array = []
+  strings.each do |string|
+    string[2] = "$"
+    kesha_array << string 
+  end 
+  kesha_array
+end
+
+def find_a(strings)
+  strings.select {|word| word[0] == "a"}
+end
+  
+p find_a(["ant", "bathtub", "fruit", "alien", "arctic"])
+  
