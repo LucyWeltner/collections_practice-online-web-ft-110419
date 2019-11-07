@@ -22,7 +22,11 @@ end
 def swap_elements_from_to(array, starting, ending)
   switched_array = Array.new
   spaces = ending - starting
-  switched_array = array[0..starting - 1] + [array[ending]] + array[starting + 1..ending - 1] + [array[starting]] + array[ending + 1..array.length - 1]
+  if starting == 0
+    switched_array = [array[ending]] + array[starting + 1..ending - 1] + [array[starting]] + array[ending + 1..array.length - 1]
+  else
+    switched_array = array[0..starting - 1] + [array[ending]] + array[starting + 1..ending - 1] + [array[starting]] + array[ending + 1..array.length - 1]
+  end
   switched_array
 end
 array = [1, 4, 8, 2, -6, 11]
