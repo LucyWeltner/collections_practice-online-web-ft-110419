@@ -21,7 +21,6 @@ end
 
 def swap_elements_from_to(array, starting, ending)
   switched_array = Array.new
-  spaces = ending - starting
   if starting == 0
     switched_array = [array[ending]] + array[starting + 1..ending - 1] + [array[starting]] + array[ending + 1..array.length - 1]
   else
