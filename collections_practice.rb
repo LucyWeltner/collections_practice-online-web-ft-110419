@@ -47,6 +47,9 @@ end
 def find_a(strings)
   strings.select {|word| word[0] == "a"}
 end
+
+def sum_array(array)
   
+
 p find_a(["ant", "bathtub", "fruit", "alien", "arctic"])
   
