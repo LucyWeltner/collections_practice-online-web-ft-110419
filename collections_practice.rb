@@ -56,6 +56,7 @@ def sum_array(array)
     end
   end
   integers.inject{|sum, number| sum + number}
+end
 
-p find_a(["ant", "bathtub", "fruit", "alien", "arctic"])
+p sum_array(["ant", 12, "fruit", 6, "alien", -3.5, "arctic"])
   
