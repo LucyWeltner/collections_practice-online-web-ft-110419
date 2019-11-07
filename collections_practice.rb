@@ -61,9 +61,9 @@ end
 def add_s(strings)
   strings.each_with_index.collect do |word, index|
     if index != 1 
-      word = word + "s"
+      word + "s"
     else 
-      word = word
+      word
     end
   end 
 end 
