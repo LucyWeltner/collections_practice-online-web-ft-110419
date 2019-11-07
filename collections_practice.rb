@@ -15,7 +15,7 @@ end
 
 def swap_elements(array)
   switched_array = Array.new
-  switched_array = array[0] + array[2] + array[1] + array[3..array.length]
+  switched_array = [array[0]] + [array[2]] + [array[1]] + array[3..array.length]
   switched_array
 end
 array = [1, 4, 8, 2, -6, 11]
