@@ -15,10 +15,8 @@ end
 
 def swap_elements(array)
   switched_array = Array.new
-  switched_array[1] = array[2]
-  switched_array[2] = array[1]
-  switched_array = array[0] + 
-  switched_array.push(array[3..array.length])
+  switched_array = array[0] + array[2] + array[1] + array[3..array.length]
+  switched_array
 end
 array = [1, 4, 8, 2, -6, 11]
 p sort_array_desc(array)
