@@ -19,4 +19,4 @@ def swap_elements(array)
   switched_array
 end
 array = [1, 4, 8, 2, -6, 11]
-p sort_array_desc(array)
+p swap_elements(array)
